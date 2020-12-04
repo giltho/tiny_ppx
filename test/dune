@@ -1,5 +1,14 @@
-(test
+; All of that will run the tiny_ppx_test and diff the output with what's in output.expected
+
+(executable
  (name tiny_ppx_test)
  (libraries tiny_lang)
  (preprocess
   (pps tiny_ppx)))
+
+(rule
+ (with-stdout-to output.actual (run ./tiny_ppx_test.exe)))
+ 
+(rule
+ (alias runtest)
+ (action (diff output.expected output.actual)))

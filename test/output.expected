@@ -1,0 +1,10 @@
+EVAL: 24
+(Tiny_ast.Plus (
+   (Tiny_ast.Plus (
+      (Tiny_ast.Plus (
+         (Tiny_ast.Plus (
+            (Tiny_ast.Plus ((Tiny_ast.Number 1), (Tiny_ast.Number 2))),
+            (Tiny_ast.Number 3))),
+         (Tiny_ast.Number 4))),
+      (Tiny_ast.Number 5))),
+   (Tiny_ast.Var "x")))

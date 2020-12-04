@@ -1,0 +1,5 @@
+(library
+ (name tiny_ppx)
+ (public_name tiny_ppx)
+ (kind ppx_rewriter)
+ (libraries tiny_ppx_lifter ppxlib))

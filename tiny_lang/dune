@@ -1,0 +1,6 @@
+(library
+ (name tiny_lang)
+ (public_name tiny_ppx.lang)
+ (libraries angstrom)
+ (preprocess
+  (pps ppx_deriving.std)))

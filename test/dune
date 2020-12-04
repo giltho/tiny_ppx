@@ -1,0 +1,5 @@
+(test
+ (name tiny_ppx_test)
+ (libraries tiny_lang)
+ (preprocess
+  (pps tiny_ppx)))

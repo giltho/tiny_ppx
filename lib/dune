@@ -1,0 +1,6 @@
+(library
+ (name tiny_ppx_lifter)
+ (public_name tiny_ppx.lifter)
+ (libraries ppxlib tiny_lang)
+ (preprocess
+  (pps ppxlib.metaquot)))

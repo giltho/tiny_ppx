@@ -12,8 +12,7 @@ let add_5_plus_x a b c d e =
   let c = Number c in
   let d = Number d in
   let e = Number e in 
-  let x = Var "x" in
-  [%tiny_expr "+++++{{a}}{{b}}{{c}}{{d}}{{e}}{{x}}"]
+  [%tiny_expr "+++++{{a}}{{b}}{{c}}{{d}}{{e}}x"]
 
 let rec eval = function
   | Number i -> i
